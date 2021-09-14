@@ -217,3 +217,69 @@ header nav ul li a:hover{
     line-height: 1.5em;
 }
 
+/* Featured Pets */
+#featured{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: wheat;
+    
+}
+#featured h3{
+    display: inline-flex;
+    justify-content: center;
+}
+#featured h3, .info h4{
+    font-size: 48px;
+}
+.featured-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: wheat;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    color: transparent;
+    background-color: transparent;
+}
+.info:hover{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: overlay;    
+}
+#featured a{
+    color: goldenrod;
+}
+#featured a:hover{
+    color: darkgoldenrod;
+
+}
+.featured-1, .featured-2, .featured-3{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    padding: 5px;
+}
+
+.featured-1 .info{
+    margin: 10px;
+    background-image: url("resources/featured-pet-1.jpg");
+}
+.featured-2 .info{
+    margin: 10px;
+    background-image: url("resources/featured-pet-2.jpg");
+}
+.featured-3 .info{
+    margin: 10px;
+    background-image: url("resources/featured-pet-3.jpg");
+}
