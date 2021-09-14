@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: Helvetica;
+}
 a{
     color:inherit;
     text-decoration: none;
@@ -20,7 +23,7 @@ header{
     flex-direction: row-reverse;
     background-color: wheat;
     border-bottom: 3px solid saddlebrown;
-    font-family: Helvetica;
+    
 }
 
 header .logo-credit:hover{
@@ -108,5 +111,81 @@ header nav ul li a:hover{
         font-size: 18px;
         margin: 5px;
         padding: 5px;
+    }
+}
+
+/* Banner */
+
+.banner{
+    display: inline-flex;
+    position: static;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin-top: 100px;
+    padding: 5%;
+    background-image: url("resources/image-dog-companion.jpg");
+    background-size: auto;
+    background-position: bottom 27% left 25% ;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 10px solid sandybrown;
+}
+.banner h1{
+    margin: 5%;
+    padding: 5%;
+    display: inline-block;
+    background-color: rgba(245, 222, 179, 0.25);
+    color: saddlebrown;
+    border-radius: 50%;
+}
+.banner .extra{
+    display: none;
+    width: 33%;
+    color: saddlebrown;
+    background-color: rgba(245, 222, 179, 0.25);
+    border-radius: 10px;
+    padding: 50px 25px;
+    margin-left: 10%;
+    text-align: center;
+}
+.banner-photo-credit{
+    background-color: wheat;
+    color:saddlebrown;
+    font-weight: 500;
+    font-size: 10px;
+    padding:2px;
+    border-bottom: 1px solid saddlebrown;
+
+}
+.banner-photo-credit a{
+    color: goldenrod;
+
+}
+.banner-photo-credit a:hover{
+    color:darkgoldenrod;
+
+}
+@media only screen and (max-width: 700px){
+    .banner h1{
+        margin: 10%;
+        font-size: 30px;
+    }
+    .banner{
+        background-position: bottom 27% center ;
+    }
+}
+@media only screen and (min-width: 1100px){
+    .banner{
+        justify-content: flex-start;
+    }
+}
+@media only screen and (min-width: 1350px){
+    .banner {
+        justify-content: space-between;
+    }
+    .banner .extra {
+        display: inline-block;
     }
 }
