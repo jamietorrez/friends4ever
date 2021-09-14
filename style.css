@@ -1,0 +1,112 @@
+/*Universal Styles*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    color:inherit;
+    text-decoration: none;
+}
+/*Header Styles*/
+header{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    height: 100px;
+    width:100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    background-color: wheat;
+    border-bottom: 3px solid saddlebrown;
+    font-family: Helvetica;
+}
+
+header .logo-credit:hover{
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: overlay;
+}
+
+header .logo-credit:hover a{
+    color: goldenrod;
+}
+
+header .logo-credit a:hover{
+    color: gold;
+}
+
+header .logo-credit{
+    display: inline-flex;
+    align-items:center;
+    text-align: center;
+    min-width: 75px;
+    min-height: 75px;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    color: transparent;
+    background-color: transparent;
+    background-image: url("resources/image-dog-sad.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px 1px 3px saddlebrown;
+    font-size: 10px;
+    z-index:2;
+}
+
+header nav{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+header nav ul{
+    width: 100%;
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+}
+header nav ul li{
+    display: inline;
+    text-align: center;
+    
+}
+header nav ul li a{
+    display: block;
+    justify-content: space-around;
+    color: saddlebrown;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: sandybrown;
+    border-radius: 10px;
+    border: 2px solid saddlebrown;
+    box-shadow: 1px 1px 3px saddlebrown;
+}
+header nav ul li a:hover{
+    background-color: saddlebrown;
+    color: sandybrown;
+    border: 2px solid sandybrown;
+    box-shadow: -1px -1px 3px saddlebrown;
+    text-decoration: underline;
+}
+@media only screen and (max-width: 700px){
+    header .logo-credit{
+        display: none;
+    }
+    header nav ul{
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        
+    }
+    header nav ul li a{
+        font-size: 18px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
