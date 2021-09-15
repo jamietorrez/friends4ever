@@ -192,6 +192,8 @@ header nav ul li a:hover{
 #missionstatement{
     position: relative;
     height:100px;
+    width: 1px;
+    display: block;
     margin-top: -100px;
 }
 .mission-container{
@@ -227,6 +229,8 @@ header nav ul li a:hover{
 #featuredpets{
     position: relative;
     height:100px;
+    width: 1px;
+    display: block;
     margin-top: -100px;
 }
 .featured{
@@ -297,9 +301,10 @@ header nav ul li a:hover{
 
 /* Services */
 #servicesavailable{
-    z-index: -1;
     position: relative;
     height:100px;
+    width: 1px;
+    display: block;
     margin-top: -100px;
 }
 .services-container{
@@ -437,6 +442,8 @@ header nav ul li a:hover{
 #contactinfo{
     position: relative;
     height:100px;
+    width: 1px;
+    display: block;
     margin-top: -100px;
 }
 .contact{
