@@ -416,3 +416,17 @@ header nav ul li a:hover{
     }
 
 }
+/* Contact Info */
+#contact{
+    background-color: saddlebrown;
+    color: wheat;
+    padding: 50px;
+    text-align: center;
+    line-height: 3em;
+}
+#contact span{
+    font-weight: bold;
+}
+#contact h3{
+    font-size:32px;
+}
